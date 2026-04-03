@@ -150,7 +150,7 @@ skillswap-hub/
 ## Setup & Installation
 
 ### Prerequisites
-- Node.js v18+
+- Node.js 
 - MongoDB (local or MongoDB Atlas)
 - Razorpay test account (free at razorpay.com)
 
