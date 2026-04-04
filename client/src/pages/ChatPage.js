@@ -48,7 +48,8 @@ export default function ChatPage() {
 
   // Init socket
   useEffect(() => {
-    socket = io('/', { transports: ['websocket'] });
+    const SOCKET_URL = process.env.REACT_APP_SOCKET_URL || '';
+    socket = io(SOCKET_URL, { transports: ['websocket'] });
     socket.on('receive_message', (data) => {
       setMessages(prev => [...prev, data]);
     });
